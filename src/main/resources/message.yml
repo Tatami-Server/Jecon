@@ -1,3 +1,5 @@
+prefix: ""
+
 doNotHavePermission: "&cYou don't have permission!!"
 missingArgument: "&cArgument is missing."
 invalidArgument: "&cInvalid argument&r: {value}"

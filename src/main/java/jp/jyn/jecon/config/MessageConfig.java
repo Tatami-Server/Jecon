@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class MessageConfig {
-    private final static String PREFIX = "[Jecon] ";
+    private static String PREFIX = "";
     public final static String HEADER = "========== Jecon ==========";
     public final static String PLAYER_ONLY = PREFIX + ChatColor.RED + "This command can only be run by players.";
 
@@ -109,6 +109,8 @@ public class MessageConfig {
 
         topFirst = parse(config.getString("topFirst"));
         topEntry = parse(config.getString("topEntry"));
+
+        PREFIX = config.getString("prefix");
 
         newVersion = config.getStringList("newVersion")
             .stream()
